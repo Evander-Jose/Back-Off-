@@ -28,4 +28,8 @@ public class IntVariable : ScriptableObject
         currentvalue = value;
     }
 
+    public void ModifyIntValue(int amount)
+    {
+        currentvalue += amount;
+    }
 }

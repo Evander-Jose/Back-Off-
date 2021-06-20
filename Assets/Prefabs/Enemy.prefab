@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7727280731644132236}
   - component: {fileID: 7727280731644132243}
   - component: {fileID: 7727280731644132242}
+  - component: {fileID: 6728519385071841867}
   - component: {fileID: 7727280731644132237}
   - component: {fileID: 2989258220663396716}
   - component: {fileID: 9160320006584555763}
-  - component: {fileID: 6728519385071841867}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
@@ -64,6 +64,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 6728519385071841867}
+--- !u!114 &6728519385071841867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727280731644132241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddba87ea6ccac484daa2291fe161dd5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackingRange: 4
+  movementSpeed: 5
+  attackDelay: 0.7
+  playerTransform: {fileID: 0}
+  projectileLauncher: {fileID: 0}
 --- !u!114 &7727280731644132237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +106,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 6f03f51a2faa3e44699851aa4d41e27a, type: 2}
+        m_TargetAssemblyTypeName: IntVariable, Assembly-CSharp
+        m_MethodName: ModifyIntValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -140,23 +169,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &6728519385071841867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7727280731644132241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddba87ea6ccac484daa2291fe161dd5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackingRange: 4
-  movementSpeed: 5
-  attackDelay: 0.7
-  playerTransform: {fileID: 0}
-  projectileLauncher: {fileID: 0}
 --- !u!1 &7727280731788976375
 GameObject:
   m_ObjectHideFlags: 0
