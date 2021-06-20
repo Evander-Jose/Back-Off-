@@ -41,6 +41,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5201000426649590102, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+      propertyPath: maxSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6728519385071841867, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
       propertyPath: movementSpeed
       value: 3.16

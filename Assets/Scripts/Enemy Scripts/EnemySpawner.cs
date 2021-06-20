@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public List<GameObject> enemies = new List<GameObject>();
+    public List<EnemySpawn> enemies = new List<EnemySpawn>();
     public FloatVariable spawnRate;
     public FloatVariable rollRate;
+
+    [System.Serializable]
+    public class EnemySpawn
+    {
+        [Range(0f, 1f)] public float probability;
+        public GameObject enemyPrefab;
+    }
 
     private void Start()
     {
@@ -17,9 +24,29 @@ public class EnemySpawner : MonoBehaviour
     {
         if(Random.value <= spawnRate.CurrentValue)
         {
-            GameObject enemyToSpawn = enemies[Random.Range(0, enemies.Count - 1)];
+            GameObject enemyToSpawn = GetRandomEnemy();
             GameObject newEnemy = Instantiate(enemyToSpawn, transform, true);
             newEnemy.transform.position = transform.position;
         }
+    }
+
+    private GameObject GetRandomEnemy()
+    {
+        float sum = 0f;
+        //First get the sum of all probabilities from the list:
+        foreach(EnemySpawn e in enemies)
+        {
+            sum += e.probability;
+        }
+
+        float roll = Random.Range(0f, sum);
+        foreach(EnemySpawn e in enemies)
+        {
+            if((roll -= e.probability) <= 0f)
+            {
+                return e.enemyPrefab;
+            }
+        }
+        return null;
     }
 }

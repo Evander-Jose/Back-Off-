@@ -8,6 +8,10 @@ public class MirrorInput : MonoBehaviour
     public float distanceFromPlayer;
     public float mirrorSpeed = 10f;
 
+    private void Start()
+    {
+        playerTransform = transform.parent;
+    }
     // Update is called once per frame
     void Update()
     {
