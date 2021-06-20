@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MirrorBehavior : MonoBehaviour
 {
+    public bool reflectInCursorDirection = true;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
@@ -12,8 +14,13 @@ public class MirrorBehavior : MonoBehaviour
         {
             Vector2 hitNormal = collision.contacts[0].normal;
             Vector2 oldVelocity = projectileComponent.rb2d.velocity;
-            //Vector2 newVelocity = Vector2.Reflect(oldVelocity, hitNormal);
-            Vector2 newVelocity = transform.up;
+
+            Vector2 newVelocity = Vector2.zero;
+
+            if (reflectInCursorDirection == false)
+                newVelocity = Vector2.Reflect(oldVelocity, hitNormal);
+            else
+                newVelocity = transform.up;
 
             projectileComponent.rb2d.velocity = newVelocity.normalized * projectileComponent.speed;
 
