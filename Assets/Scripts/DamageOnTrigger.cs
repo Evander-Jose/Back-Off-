@@ -8,7 +8,6 @@ public class DamageOnTrigger : MonoBehaviour
     public bool destoryOnTriggerEnter = true;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
 
         Health otherHealth = collision.gameObject.GetComponent<Health>();
         if (otherHealth)

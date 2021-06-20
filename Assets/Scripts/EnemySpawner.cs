@@ -15,7 +15,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void RandomlySpawnEnemies()
     {
-        Debug.Log("Randomly spawning!");
         if(Random.value <= spawnRate.CurrentValue)
         {
             GameObject enemyToSpawn = enemies[Random.Range(0, enemies.Count - 1)];
