@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ed78d94e83e7ad47b00cc27691ccff9, type: 3}
   m_Name: Spawn Rate
   m_EditorClassIdentifier: 
-  value: 0.4
+  value: 0.05
   constant: 0
   saveFromPlaymode: 0

@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private Health playerHealthComponent;
+    public Health playerHealthComponent;
     public FloatVariable playerHealthVariable;
     public FloatVariable playerMaxHealthVariable;
-
-    private void Start()
-    {
-        playerHealthComponent = GetComponent<Health>();
-    }
 
     private void Update()
     {

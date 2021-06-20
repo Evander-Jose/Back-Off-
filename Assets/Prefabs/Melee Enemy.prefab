@@ -31,7 +31,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0bca62b21dd82c4ba1e8adffdb1674f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 3175395085922644581}
+  destinationSetter: {fileID: 1124150296304838145}
   damageAmount: 1
 --- !u!1001 &8174532205443924014
 PrefabInstance:
@@ -110,9 +111,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7727280731644132242, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+    - {fileID: 7727280731644132243, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
 --- !u!1 &1895194488161680319 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7727280731644132241, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
   m_PrefabInstance: {fileID: 8174532205443924014}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3175395085922644581 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6728519385071841867, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+  m_PrefabInstance: {fileID: 8174532205443924014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895194488161680319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddba87ea6ccac484daa2291fe161dd5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1124150296304838145 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9144573371304879663, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+  m_PrefabInstance: {fileID: 8174532205443924014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895194488161680319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

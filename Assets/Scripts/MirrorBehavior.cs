@@ -12,7 +12,8 @@ public class MirrorBehavior : MonoBehaviour
         {
             Vector2 hitNormal = collision.contacts[0].normal;
             Vector2 oldVelocity = projectileComponent.rb2d.velocity;
-            Vector2 newVelocity = Vector2.Reflect(oldVelocity, hitNormal);
+            //Vector2 newVelocity = Vector2.Reflect(oldVelocity, hitNormal);
+            Vector2 newVelocity = transform.up;
 
             projectileComponent.rb2d.velocity = newVelocity.normalized * projectileComponent.speed;
 

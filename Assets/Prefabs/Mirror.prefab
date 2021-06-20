@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1595335222284537970}
   - component: {fileID: 1595335222284537971}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Mirror Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1595335222891819337}
   - component: {fileID: 1595335222891819334}
-  m_Layer: 0
+  - component: {fileID: 2102470442}
+  - component: {fileID: 2102470441}
+  - component: {fileID: 2102470443}
+  m_Layer: 13
   m_Name: Mirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,5 +130,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  distanceFromPlayer: 2
-  mirrorSpeed: 10
+  distanceFromPlayer: 1.5
+  mirrorSpeed: 5.5
+--- !u!50 &2102470442
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595335222891819336}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: 2eb9b642b54ed8a4ebb22d3da995a6ef, type: 2}
+  m_Interpolate: 2
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!61 &2102470441
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595335222891819336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 2eb9b642b54ed8a4ebb22d3da995a6ef, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.008277416, y: -0.024825811}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.076096, y: 0.3545289}
+  m_EdgeRadius: 0.15
+--- !u!114 &2102470443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595335222891819336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec19a9dac33f7b44b578c5d9997a2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

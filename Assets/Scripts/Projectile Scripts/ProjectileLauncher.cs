@@ -4,25 +4,15 @@ using UnityEngine;
 
 public class ProjectileLauncher : MonoBehaviour
 {
-    //For testing purposes:
-    public Transform playerTransform;
     public GameObject projectile;
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            SpawnThenLaunchProjectile();   
-        }
-    }
-
-    public void SpawnThenLaunchProjectile()
+    public void SpawnThenLaunchProjectile(Vector3 target)
     {
         GameObject newProjectile = Instantiate(projectile);
         Projectile projectileComponent = newProjectile.GetComponent<Projectile>();
         if (projectileComponent)
         {
-            projectileComponent.LaunchProjectile(playerTransform.position - transform.position, transform.position);
+            projectileComponent.LaunchProjectile(target - transform.position, transform.position);
         }
     }
 }

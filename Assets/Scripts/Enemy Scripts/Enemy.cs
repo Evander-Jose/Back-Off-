@@ -8,13 +8,9 @@ public class Enemy : MonoBehaviour
     public float movementSpeed;
     public float attackDelay = 0.7f;
     public Transform playerTransform;
-    public ProjectileLauncher projectileLauncher;
-
     private void OnEnable()
     {
-        projectileLauncher = GetComponent<ProjectileLauncher>();
         playerTransform = FindObjectOfType<PlayerInput>().transform;
-        projectileLauncher.playerTransform = playerTransform;
     }
 
 }
