@@ -5,16 +5,19 @@ using UnityEngine;
 public class DamageOnTrigger : MonoBehaviour
 {
     public float damageAmount;
-
+    public bool destoryOnTriggerEnter = true;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.gameObject.name);
 
         Health otherHealth = collision.gameObject.GetComponent<Health>();
-        if(otherHealth)
+        if (otherHealth)
         {
             //If there is a health component on the other gameobject, damage it:
             otherHealth.Damage(damageAmount);
         }
+
+        if(destoryOnTriggerEnter)
+            Destroy(transform.parent.gameObject);
     }
 }

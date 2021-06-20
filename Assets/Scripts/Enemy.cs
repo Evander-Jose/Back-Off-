@@ -11,10 +11,11 @@ public class Enemy : MonoBehaviour
     private Transform playerTransform;
     private ProjectileLauncher projectileLauncher;
 
-    private void Start()
+    private void OnEnable()
     {
         projectileLauncher = GetComponent<ProjectileLauncher>();
         playerTransform = FindObjectOfType<PlayerInput>().transform;
+        projectileLauncher.playerTransform = playerTransform;
     }
 
     float timeSinceLastAttack = 0f;
