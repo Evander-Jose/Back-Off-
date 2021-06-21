@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fec19a9dac33f7b44b578c5d9997a2be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reflectInCursorDirection: 0
 --- !u!66 &2401057795149827414
 CompositeCollider2D:
   m_ObjectHideFlags: 0
