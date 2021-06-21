@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Enemy))]
 public class MeleeEnemy : MonoBehaviour
@@ -9,6 +10,8 @@ public class MeleeEnemy : MonoBehaviour
     public Enemy enemy;
     public AIDestinationSetter destinationSetter;
     public float damageAmount;
+    [Space]
+    public UnityEvent onAttackHit;
 
     private Health playerHealth;
     private Animator anim;
@@ -42,8 +45,10 @@ public class MeleeEnemy : MonoBehaviour
         }
     }
 
+    //This is used by the animation event attached!
     public void AttackPlayer()
     {
         playerHealth.Damage(damageAmount);
+        onAttackHit.Invoke();
     }
 }

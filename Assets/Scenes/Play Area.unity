@@ -1901,7 +1901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862632868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 11.8}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 780708901}
@@ -8486,6 +8486,22 @@ PrefabInstance:
       propertyPath: onDeath.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1734015043}
+    - target: {fileID: 670238965331858731, guid: 3d7dbbc2eee8b974a972aec5340b4867, type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859431549273976355, guid: 3d7dbbc2eee8b974a972aec5340b4867, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524157274829439751, guid: 3d7dbbc2eee8b974a972aec5340b4867, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628574625038577901, guid: 3d7dbbc2eee8b974a972aec5340b4867, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8628574625212604516, guid: 3d7dbbc2eee8b974a972aec5340b4867, type: 3}
       propertyPath: m_Name
       value: Player

@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: randomStep
       value: 34
       objectReference: {fileID: 0}
+    - target: {fileID: 4644523265107686168, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a9ae00629098e684ab1deac08d4c1976, type: 3}
     - target: {fileID: 5201000426649590102, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
       propertyPath: maxSpeed
       value: 1
@@ -71,6 +75,14 @@ PrefabInstance:
       propertyPath: projectile
       value: 
       objectReference: {fileID: 4576841910372088450, guid: 37545de676832d14fb1b955669ab4dec, type: 3}
+    - target: {fileID: 7727280731644132243, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+      propertyPath: onProjectileLaunch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 212f1f6f76321424491d1d6e10e2ab75, type: 2}
+    - target: {fileID: 7727280731644132243, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+      propertyPath: onProjectileLaunch.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7727280731788976369, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
       propertyPath: m_Color.b
       value: 0.16363218
