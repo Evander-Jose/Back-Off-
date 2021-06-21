@@ -101,6 +101,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Melee Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7727280731788976368, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7070757
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727280731788976368, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7070757
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727280731788976368, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7070757
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727280731788976369, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4170181683972878625, guid: 75969acc4ae33fb4baead67a693e25ea, type: 3}
     - target: {fileID: 7727280731788976369, guid: ae1f1bb940a5fa8418fd6b28798fdd4a, type: 3}
       propertyPath: m_Color.b
       value: 0.93927956

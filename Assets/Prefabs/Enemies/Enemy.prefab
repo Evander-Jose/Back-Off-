@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: -1447810946800242350}
   - component: {fileID: 5201000426649590102}
   - component: {fileID: 2188048088362810135}
+  - component: {fileID: 7343550728777800760}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
@@ -84,6 +85,9 @@ MonoBehaviour:
   movementSpeed: 5
   attackDelay: 0.7
   playerTransform: {fileID: 0}
+  agent: {fileID: 5201000426649590102}
+  anim: {fileID: 7343550728777800760}
+  walkBoolName: isWalking
 --- !u!114 &7727280731644132237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +129,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &2989258220663396716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -265,6 +272,25 @@ MonoBehaviour:
   version: 1
   penalty: 1000
   randomStep: 10
+--- !u!95 &7343550728777800760
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7727280731644132241}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df934c9bb7d8e71409b31ccfc9d37b49, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7727280731788976375
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +317,7 @@ Transform:
   m_GameObject: {fileID: 7727280731788976375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.8092, y: 6.8092, z: 6.8092}
+  m_LocalScale: {x: 1.9067619, y: 1.9067619, z: 1.9067619}
   m_Children: []
   m_Father: {fileID: 7727280731644132236}
   m_RootOrder: 0
@@ -336,7 +362,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: -3866301132617165569, guid: af62b316c1e2bd94baa220686291e5b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

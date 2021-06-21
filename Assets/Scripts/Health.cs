@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float currentHealth = 10f;
     [SerializeField] private float maximumHealth = 10f;
     public UnityEvent onDeath;
-
+    public UnityEvent onDamaged;
     public float MaxHealth
     {
         get
@@ -31,6 +31,9 @@ public class Health : MonoBehaviour
         if(currentHealth <= 0f)
         {
             onDeath.Invoke();
+        } else
+        {
+            onDamaged.Invoke();
         }
     }
 

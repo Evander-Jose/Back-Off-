@@ -12,12 +12,14 @@ public class PlayerInput : MonoBehaviour
     public GameObject normalShield;
     public GameObject focusedShield;
 
+    private Animator anim;
     private float currentSpeed = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         currentSpeed = movementSpeed;
     }
 
@@ -54,6 +56,8 @@ public class PlayerInput : MonoBehaviour
 
         playerRigidbody.velocity = velocity;
 
-
+        //Walking animation:
+        bool useWalkAnimation = x_input != 0 || y_input != 0;
+        anim.SetBool("isWalking", useWalkAnimation);
     }
 }
