@@ -33,7 +33,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 3175395085922644581}
   destinationSetter: {fileID: 1124150296304838145}
-  damageAmount: 1
+  damageAmount: 3
 --- !u!1001 &8174532205443924014
 PrefabInstance:
   m_ObjectHideFlags: 0

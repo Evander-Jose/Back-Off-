@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8628574625212604517}
   - component: {fileID: 476272280}
   - component: {fileID: 8298196072864857701}
+  - component: {fileID: 321646023}
   m_Layer: 12
   m_Name: Player
   m_TagString: Untagged
@@ -86,8 +87,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 088343926e032154aba19c4f264ce3de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 10
-  maximumHealth: 10
+  currentHealth: 25
+  maximumHealth: 25
   onDeath:
     m_PersistentCalls:
       m_Calls:
@@ -95,6 +96,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 321646023}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Game Over Screen
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: HighScoreManager, Assembly-CSharp
+        m_MethodName: SaveNewHighScore
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -119,6 +144,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.2
+--- !u!114 &321646023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8628574625212604516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9b63235c471a94a9765eb9ab88d27f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8628574625903792894
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,7 +490,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_ColliderPaths.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_ColliderPaths.Array.data[1].m_Collider
@@ -465,39 +502,39 @@ PrefabInstance:
       objectReference: {fileID: 827544653687953959}
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.size
-      value: 20
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[0].x
-      value: -0.9796284
+      value: 0.972744
       objectReference: {fileID: 0}
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[0].y
-      value: -1.3337704
-      objectReference: {fileID: 0}
-    - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[1].x
-      value: -0.6376516
-      objectReference: {fileID: 0}
-    - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
-      propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[1].y
       value: -0.0576898
       objectReference: {fileID: 0}
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
+      propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[1].x
+      value: 0.972744
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
+      propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.0576898
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[2].x
-      value: 0.6330072
+      value: -0.98417133
       objectReference: {fileID: 0}
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[2].y
-      value: -0.057710502
+      value: 0.057631202
       objectReference: {fileID: 0}
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[3].x
-      value: 0.96959263
+      value: -0.98411274
       objectReference: {fileID: 0}
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[3].y
-      value: -1.3137497
+      value: -0.0576898
       objectReference: {fileID: 0}
     - target: {fileID: 5296921005145262610, guid: de98984105a81ff4b8051db5e0bfdca3, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.data[0].Array.data[4].x

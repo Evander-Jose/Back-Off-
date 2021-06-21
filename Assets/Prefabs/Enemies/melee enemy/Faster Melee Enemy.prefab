@@ -83,5 +83,9 @@ PrefabInstance:
       propertyPath: pickNextWaypointDist
       value: 1.28
       objectReference: {fileID: 0}
+    - target: {fileID: 6449604099686485197, guid: 6828d3f60176605489fc663ea75bd59a, type: 3}
+      propertyPath: damageAmount
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6828d3f60176605489fc663ea75bd59a, type: 3}
